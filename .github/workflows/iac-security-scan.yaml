@@ -32,6 +32,7 @@ jobs:
           scan-type: "config"
           scan-ref: "."
           severity: ${{ inputs.severity }}
-          format: "table"
+          format: "sarif"
+          output: "trivy-scan.sarif"
           exit-code: "0"
 
