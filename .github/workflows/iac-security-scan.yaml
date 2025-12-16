@@ -15,6 +15,7 @@ on:
           - "CRITICAL,HIGH"
           - "MEDIUM,HIGH"
           - "CRITICAL,MEDIUM"
+          - "CRITICAL,HIGH,MEDIUM"
   push:
     branches: [ "main" ]
 
