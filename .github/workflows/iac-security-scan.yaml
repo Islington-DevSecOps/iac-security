@@ -37,3 +37,8 @@ jobs:
           output: "trivy-scan.sarif"
           exit-code: "0"
 
+      - name: Download Trivy Scan Report Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-scan
+          path: trivy-scan.sarif
